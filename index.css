@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(2, 17, 56);
+    width: 100%;
+    padding: 0%;
+}
+
+nav{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: azure;
+}
+
+nav .menu{
+    background-color: chocolate;
+    width: 100px;
+    height: 30px;
+}
+
+nav .contato{
+    background-color: aqua;
+    width: 10%;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10%;
+    display: flex;
+    text-align: center;
+}
