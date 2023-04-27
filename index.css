@@ -1,30 +1,282 @@
 body{
     background-color: rgb(2, 17, 56);
     width: 100%;
-    padding: 0%;
+    margin: 0%;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    cursor: default;
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    color: white;
+    font-size: 31px;
+    cursor: default;
+    font-family: 'Lato', sans-serif;
+}
+
+h3, label{
+    color: rgb(179, 179, 179);
+    font-size: 20px;
+    cursor: default;
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    color: rgb(179, 179, 179);
+    font-size: 16px;
+    text-align: justify;
+    cursor: default;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    color: white;
+    cursor: default;
+    font-family: 'Lato', sans-serif;
 }
 
 nav{
-    width: 90%;
-    height: 30px;
+    background: linear-gradient(to bottom, rgb(1, 12, 37), rgb(2, 17, 56));
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+}
+
+
+nav div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+
+header{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+header .minhafoto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    height: 500px;
+    border-radius: 60%;
+}
+
+header .bemvindo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .bemvindo h2{
+    margin-bottom: 0%;
+}
+
+header .bemvindo h1{
+    margin-top: 0%;
+}
+
+.sobre{
+    background-color: rgb(1, 12, 37);
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre div{
+    width: 80%;
+}
+
+main{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+main .servicos{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #servicos{
     display: flex;
     justify-content: space-between;
-    position: relative;
-    background-color: azure;
 }
 
-nav .menu{
-    background-color: chocolate;
-    width: 100px;
-    height: 30px;
+#servicos div{
+    width: 30%;
 }
 
-nav .contato{
-    background-color: aqua;
-    width: 10%;
-    height: 25px;
-    border: 1px solid black;
-    border-radius: 10%;
+.portfolio{
+    background-color: rgb(1, 12, 37);
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
     display: flex;
-    text-align: center;
+    justify-content: center;
+}
+
+.portfolio .imgs{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#imgs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio img{
+    width: 30%;
+    height: 300px;
+}
+
+.portfolio a{
+    background-image:url(imgs/programa.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 300px;
+}
+
+.portfolio a img{
+    width: 100%;
+    height: 100%;
+}
+
+.contato{
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.contato #contato{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contato #email_tel{
+    display: flex;
+    justify-content: space-between;
+}
+
+#email_tel img{
+   width: 40px;
+}
+
+#email_tel div{
+    display: flex;
+
+}
+
+#contato .mensagem{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dados{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dados #dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dados input{
+    width: 160%;
+}
+
+#contato #mensagem{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensagem #mensagem1{
+    width: 90%;
+    height: 85%;
+}
+
+#enviar{
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    border-radius: 30%;
+    color: rgb(1, 12, 37);
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+footer{
+    background-color: rgb(1, 12, 37);
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p{
+    margin: 0%;
+}
+
+footer div{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a{
+    width: 30px;
+}
+
+footer a img{
+    width: 30px;
 }

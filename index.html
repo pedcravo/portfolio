@@ -6,56 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Feito por Pedro Cravo</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <div class="menu"></div>
-        <div class="contato">
-            <p> Entre em contato </p>
-        </div>
+        <div>
+        <a href="#sobre">sobre</a>
+        <a href="#serv">serviços</a>
+        <a href="#port">portfólio</a>
+        <a href="#cont">contato</a>
+    </div>
+        
     </nav>
 
     <header>
-        <div>
-            <img src="imgs/Foto minha 1.jpg" alt="Minha Foto">
-        </div>
-        <div>
-            <h2> Bem vindo ao meu site</h2>
+        <div class="bemvindo">
+            <h2> Seja muito bem vindo</h2>
             <h1> Meu nome é Pedro Cravo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut nihil alias, libero minus eius obcaecati soluta nesciunt, itaque quos quidem deleniti? Facilis, repellendus quaerat est expedita adipisci architecto alias?</p>
         </div>
-        <div>
-            <h2>Sobre mim:</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, in cum animi aliquid inventore saepe amet! Eius cumque saepe, velit beatae facilis provident dolore a, earum maxime deleniti, atque et!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque voluptate delectus eos optio blanditiis quos molestias ab placeat doloremque itaque quae pariatur quaerat, neque fugit. Nostrum labore eum totam.</p>
+        <div class="minhafoto">
+            <img src="imgs/Foto minha 1.jpg">
         </div>
     </header>
+        
+    <div class="sobre" id="sobre">
+        <div>
+            <h1>Sobre mim:</h1>
+            <p>Olá, meu nome é Pedro Henrique Souza Cravo, nasci em 2005 na serra/ES e sou crente. Sou apaixonado por Jesus, por minha namorada,  por minha familia e por jogos. Terminei o ensino fundamental e médio, cursos de robotica e desenvolvimento de jogos e atualmente estou cursando Ciências da Computação na UVV.</p>
+            <p>Sou fiel, curioso e esforçado. Gosto de descubrir e aprender diversas coisas principalmente da area de tecnologia.Busco aprimorar meus conhecimetos e aprneder com os outros. Gsosto de trabalhar sozinho porém consigo trabalhar bem com outras pessoas, desde que estejam dispostas a trabalhar junto.</p>
+            <p>Como já disse anteriormente, eu amo jogos, foi por causa deles e dos trabalhos que fazia na igreja que vim para essa area.</p>
+            <p id="serv">Na igreja aprendi a mexer em mesas de som grandes e pequenas, analogicas e também digitais, câmeras de gravação de vídeo, transmissão de live pro youtube, multimídia e iluminação de palco. Sei também programar no Unreal Engine, modelar 3d, editar videos e muito mais.</p>
+        </div>
+    </div>
 
     <main>
-        <h1>Serviços</h1>
-        <div>
-            <div>Lorem</div>
-            <div>ipsum</div>
-            <div>dolor</div>
-        </div>
-        <div>
-         texto de cada serviço
-        </div>
-        </main>
+        <div class="servicos">
+            <h1>Serviços</h1>
+            <div id="servicos">
+                <div>
+                    <h2>Sonoplasta</h2>
+                    <p>Como disse anteriormente, sei manusear uma mesa de som, os cabos que são plugados e caixas de som. Obtive experiencia com a aréa trabalhando na igreja desde os meus 10 anos.</p>
+                </div>
 
-        <div>
-            <h1> Ultimos projetos</h1>
-            <div></div>
-            <div></div>
-            <div></div>
+                <div>
+                    <h2>Game developer</h2>
+                    <p>Como já disse, tenho experiencia na aréa de desenvolvimento de jogos desde o processo da escrita da historia até o lançamento do produto final.</p>
+                </div>
+
+              <div>
+                 <h2>Programador</h2>
+                  <p>Atualmente estou aprendendo linguagens como html, css e javascript, no curso de Ciências da Computação da UVV e estou gostando bastante.</p>
+              </div>
+            </div>
         </div>
+    </main>
+
+    <div class="portfolio" id="port">
+        <div class="imgs">
+            <h1>Portfólio</h1>
+            <div id="imgs">
+                <img src="imgs/mesa de som.png">
+                <video width="30%" height= "300px"
+                controls autoplay loop>
+                    <source src="imgs/jogo.mp4">
+                </video>
+                <a href="https://github.com/pedcravo/Prova" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contato" id="cont">
+        <div id="contato">
+            <h1>Entre em contato</h1>
+            <div id="email_tel">
+                <div>
+                    <img src="imgs/email.png" alt="email">
+                    <h3>pedroh.s.cravo@gmail.com</h3>
+                </div>
+                <div>
+                    <img src="imgs/telefone.png" alt="telefone">
+                <h3>(27)99727-9563</h3>
+                </div>
+            </div>
+
+            <div class="mensagem">
+                <div class="dados">
+                    <div id="dados">
+                        <label for="nome">nome</label>
+                        <input type="text" name="nome" id="nome">
+                        <br>
+                        <label for="telfone">nº de telefone</label>
+                        <input type="text" name="telefone" id="telefone">
+                    </div>
+                    <div id="dados">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                        <br>
+                        <label for="assunto">assunto</label>
+                        <input type="text" name="assunto" id="assunto">
+                    </div>
+                </div>
+
+                <div id="mensagem">
+                    <label for="mensagem1">escreva sua mensagem aqui</label>
+                <input type="text" name="mensagem1" id="mensagem1">
+                </div>
+                <input type="submit" value="enviar" id="enviar">
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div>
-
+            <a href="https://www.linkedin.com/in/pedro-henrique-souza-cravo-413710174/" target="_blank">
+                <img src="imgs/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/pedcravo" target="_blank">
+                <img src="imgs/github.png" alt="github">
+            </a>
+            <a href="https://www.instagram.com/pedcravo/" target="_blank">
+                <img src="imgs/instagram.png" alt="instagram">
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="imgs/whatsapp.png" alt="whatsapp">
+            </a>
         </div>
-
-        <h1></h1>
+        <div>
+            <p>Feito por Pedro Cravo</p>
+        </div>
     </footer>
 </body>
 </html>
